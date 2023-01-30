@@ -23,13 +23,13 @@ void sun_init(sun_t* this)
 void sun_destroy(sun_t* this) {}
 
 // sun: getter(is_shining)
-int sun_get_shining(sun_t* this)
+int sun_get_is_shining(sun_t* this)
 {
     return this->is_shining;
 }
 
 // sun: setter(is_shining)
-void sun_set_shining(sun_t* this, int value)
+void sun_set_is_shining(sun_t* this, int value)
 {
     if (value == 0)
         this->is_shining = 0;
@@ -40,5 +40,8 @@ void sun_set_shining(sun_t* this, int value)
 // sun: display info
 void sun_display(sun_t* this)
 {
-    printf("Sun::is_shining: %d\n", this->is_shining);
+    printf("Sun is ");
+    if (!this->is_shining)
+        printf("not ");
+    printf("shining.\n");
 }

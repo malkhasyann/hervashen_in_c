@@ -42,6 +42,6 @@ int tree_photosynthesis(tree_t* this)
 // tree: display info
 void tree_display(tree_t* this)
 {
-    printf("Tree::position: {%d, %d}\n",
+    printf("Tree at {%d, %d}\n",
             this->pos[0], this->pos[1]);
 }
