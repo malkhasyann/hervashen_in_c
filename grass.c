@@ -14,9 +14,9 @@ grass_t* grass_malloc()
 }
 
 // grass: constructor
-void grass_init(grass_t* this, int point)
+void grass_init(grass_t* this)
 {
-    this->point = 3;
+    this->point = 0;
 }
 
 // grass: destructor
