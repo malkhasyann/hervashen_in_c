@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 
 // grass: type definition
 typedef struct
@@ -15,7 +16,7 @@ grass_t* grass_malloc()
 // grass: constructor
 void grass_init(grass_t* this, int point)
 {
-    this->point = 0;
+    this->point = 3;
 }
 
 // grass: destructor
@@ -29,6 +30,15 @@ int grass_get_point(grass_t* this)
 
 // grass: setter(point)
 void grass_set_point(grass_t* this, int point)
+{   
+    if (point <= 0)
+        this->point = 0;
+    else
+        this->point = point;
+}
+
+// grass: display info
+void grass_display(grass_t* this)
 {
-    this->point = point;
+    printf("Grass::point: %d\n", this->point);
 }
