@@ -40,5 +40,5 @@ void oxygen_set_volume(oxygen_t* this, int volume)
 // oxygen: display info
 void oxygen_display(oxygen_t* this)
 {
-    printf("Oxygen volume in air: %d\n", this->volume);
+    printf("Oxygen volume in air: %d.\n", this->volume);
 }

@@ -33,7 +33,6 @@ void frog_init(
     int stomach,
     int lung)
 {
-    srand(time(NULL));
     this->name = (char*)malloc(20 & sizeof(char));
     strcpy(this->name, name);
     this->is_awake = is_awake;
@@ -150,7 +149,7 @@ int frog_is_dead(frog_t* this)
 // frog: dead message
 void frog_dead_message(frog_t* this)
 {
-    printf("%s is dead", this->name);
+    printf("%s is dead.\n", this->name);
 }
 
 // frog: display info
